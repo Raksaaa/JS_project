@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../fontawesome-free-6.4.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Table.com</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid bg-dark">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 container"
+        >
+        <a class="d-flex title-head align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none navbar- text-light fw-bold animate__animated animate__bounce" href="../index.html"
+        >THE STYLE</i
+      ></a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link text-light" aria-current="page">ទំព័រដើម</a>
+            </li>
+            <li><a href="../Page/NewIn.html" class="nav-link text-light">ស្តុកថ្មី</a></li>
+            <li><a href="../Page/clothes.html" class="nav-link text-light">សម្លៀកបំពាក់</a></li>
+            <li><a href="../Page/shoes.html" class="nav-link text-light">ស្បែកជើង</a></li>
+            <li><a href="../Page/Jewelry.html" class="nav-link text-light">គ្រឿងអលង្ការ</a></li>
+            <li><a href="../Page/AboutMe.html" class="nav-link text-light">អំពីយើង</a></li>
+          </ul>
+        </header>
+      </div>
+    </section>
+
+    <section class="sec_middle mt-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <table border="0" class="table table-bordered">
+              <thead>
+                <th>ID</th>
+                <th>Price</th>
+                <th>Status and noted</th>
+                <th>Date</th>
+                <th>Action</th>
+              </thead>
+            </table>
+            <div id="tasks"></div>
+            
+          </div>
+          <div class="col-12 col-lg-4 addproduct">
+            <div class="col-8 form-order form-add">
+              <h3 class="fw-bolder mb-5 text-primary title-head">What is new today?</h3>
+              <input
+                class="form-control form-control-lg"
+                id="col_id"
+                type="text"
+                placeholder="ID*"
+                aria-label=".form-control-lg example"
+                required
+              />
+              <input
+                class="form-control form-control-lg mt-3"
+                type="text"
+                id="col_link"
+                placeholder="Image Link*"
+                aria-label=".form-control-lg example"
+                required
+              />
+              <input
+                class="form-control form-control-lg mt-3"
+                id="col_price"
+                type="text"
+                placeholder="Price*"
+                aria-label=".form-control-lg example"
+                required
+              />
+              <input
+                class="form-control form-control-lg mt-3"
+                id="col_status"
+                type="text"
+                placeholder="Status*"
+                aria-label=".form-control-lg example"
+                required
+              />
+              <input
+                class="form-control form-control-lg mt-3"
+                id="col_date"
+                type="text"
+                placeholder="Date import*"
+                aria-label=".form-control-lg example"
+                required
+              />
+              <div
+                class="container d-flex align-items-center justify-content-end"
+              >
+              </div>
+              <div class="mt-4 box-alert">
+                <p class="alert"></p>
+                <button
+                  onclick="AddProduct()"
+                  class="medium_remove text-black"
+                >
+                  Add New Product
+                </button>
+                <button
+                  onclick="BackItem()"
+                  class="medium_remove text-black"
+                >
+                  Restore Default Items
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section>
+        <div class="container-fluid py-5 foot-foot-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head ">
+                  YOUR STYLE
+                </h5>
+                <p class="text-dark fw-bold">
+                  THE STYLE ជាគេហទំព័រលក់សម្លៀកបំពាក់ឈានមុខគេដែល <br />
+                  ផ្តល់ភាពងាយស្រួលដល់អតិថិជនក្នុងការទិញទំនិញតាមអនឡាញ។ <br />
+                  សូមអរគុណចំពោះការវាយតម្លៃនិងប្រើប្រាស់នូវគេហទំព័ររបស់ខ្ញំុ។ <br />
+                  ខ្ញំុពេញចិត្តនិងរីករាយទទួលនូវមតិរិះគន់និងស្ថាបនាទាំងអស់។ <br />
+                </p>
+              </div>
+
+              <div class="col-lg-4">
+                <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head">
+                  HOSTED PROJECTS
+                </h5>
+                <hr class="hr-line" />
+                <p>
+                  <a
+                    href="http://training.antkh.com/achievements/657.aspx"
+                    class="text-dark fw-bold title-head"
+                    >Bank management system for programming course</a
+                  >
+                </p>
+                <hr class="hr-line" />
+                <p>
+                  <a
+                    href="http://antstudents.com/Web/4623/ProjectCambodiaAriLine/index.html"
+                    class="text-dark fw-bold title-head"
+                    >Cambodia airline for website course</a
+                  >
+                </p>
+                <hr class="hr-line" />
+              </div>
+
+              <div class="col-lg-4">
+                <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head">
+                  ADDRESS
+                </h5>
+                <p>
+                  <a href="http://www.antkh.com/" class="text-dark fw-bold title-head"
+                    >Wesite &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp; antkh.com</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.facebook.com/anttrainning?mibextid=ZbWKwL"
+                    class="text-dark fw-bold title-head"
+                    >Facebook &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Ant
+                    tranings</a
+                  >
+                </p>
+                <p>
+                  <a
+                    href="https://www.google.com/maps/place/ANT+Technology+Training+School/@11.5763445,104.8910369,17z/data=!4m14!1m7!3m6!1s0x310951ed5c3cb82f:0xd9d9c87fc8db146a!2sANT+Technology+Training+School!8m2!3d11.5763445!4d104.8936118!16s%2Fg%2F11fl5mt4l1!3m5!1s0x310951ed5c3cb82f:0xd9d9c87fc8db146a!8m2!3d11.5763445!4d104.8936118!16s%2Fg%2F11fl5mt4l1?entry=ttu"
+                    class="text-dark fw-bold title-head"
+                    >Location &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;Toul kork ,
+                    phnom penh , cambodia</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid py-2 bg-dark">
+          <p class="text-center title-head">
+            © 2023 by sAa@xmegaa. Brought to you by
+            <span class="ais"> Rak sAa</span>
+          </p>
+        </div>
+      </section>
+    </footer>
+    
+  </body>
+  <script>
+    function DeleteALLItem() {
+      $("#tasks").remove();
+    }
+  </script>
+  <script>
+    function showAlert(text, action) {
+      alertMessage.textContent = text; // = innerText
+      alertMessage.classList.add(`alert-${action}`);
+
+      setTimeout(() => {
+        alertMessage.textContent = "";
+        alertMessage.classList.remove(`alert-${action}`);
+      }, 1500);
+    }
+  </script>
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../Info.js"></script>
+</html>

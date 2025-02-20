@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Suwannaphum:wght@300&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../fontawesome-free-6.4.0/js/all.js"></script>
+    <script src="../Info.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Clothes.com</title>
+  </head>
+  <body>
+    <section>
+      <div class="container-fluid bg-dark">
+        <header
+          class="d-flex flex-wrap justify-content-center py-3 mb-4 container"
+        >
+        <a class="d-flex align-items-center title-head mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none navbar- text-light fw-bold animate__animated animate__bounce" href="../index.html"
+        >THE STYLE</i
+      ></a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link text-light" aria-current="page">ទំព័រដើម</a>
+            </li>
+            <li><a href="NewIn.html" class="nav-link text-light">ស្តុកថ្មី</a></li>
+            <li><a href="clothes.html" class="nav-link text-light">សម្លៀកបំពាក់</a></li>
+            <li><a href="shoes.html" class="nav-link text-light">ស្បែកជើង</a></li>
+            <li><a href="Jewelry.html" class="nav-link text-light">គ្រឿងអលង្ការ</a></li>
+            <li><a href="AboutMe.html" class="nav-link text-light">អំពីយើង</a></li>
+          </ul>
+        </header>
+      </div>
+    </section>
+
+    <section class="sec_middle mt-5">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h1 class="text-dark fw-bold mt-4 title-head">Our new products are on its way.</h1>
+            <p class="text-dark mt-5">
+              ចុះឈ្មោះដើម្បីក្លាយជាអតិថិជនដំបូងគេដែលដឹងនៅពេលយើងបើកដំណើរការ pre-order
+            </p>
+            <p class="mb-5 text-dark">
+              អាវយឺតថ្មីកំពុងចេញលក់នៅខែ
+              <span class="ais">JULY - 2025</span>
+              ជាមួយនឹងការផ្សព្វផ្សាយដ៏ធំមួយ
+            </p>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control mb-4" placeholder="អុីម៉ែលរបស់អ្នក" id="input-email"/>
+                <div class="launch">
+                  <p class="alert"></p>
+                  <button type="reset" class="child-launch" onclick="checkEmail()">បើកដំណើរការ Account</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-12 col-sm-6 d-flex align-items-center justify-content-center"
+          >
+            <div class="row mt-3">
+              <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <img src="../vendor/Image/shirt1.webp" alt="" class="px-4 banner-"/>
+              </div>
+              <div class="col-12 col-sm-6 d-flex justify-content-center">
+                <img src="../vendor//Image/shirt2.webp" alt="" class="pt-5 banner-"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec_middle">
+      <div class="container">
+        <h3 class="text-black fw-bold container py-2 text-center">
+          សេវាកម្មរបស់ពួកយើង
+        </h3>
+        <div class="row mt-5 d-flex justify-content-center">
+          <div class="col-9 col-sm-6 col-lg-3 box-shop">
+            <div class="d-flex justify-content-center my-4">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h5 class="text-dark fw-bold text-center">ហ្វ្រីការដឹកជញ្ជូន</h5>
+            <p class="text-dark text-center mb-4">ហ្វ្រីការដឹកជញ្ជូនសម្រាប់ pre-orderតែប៉ុណ្ណោះ</p>
+          </div>
+          <div class="col-9 col-sm-6 col-lg-3 box-shop">
+            <div class="d-flex justify-content-center my-4">
+              <i class="fa-brands fa-waze"></i>
+            </div>
+            <h5 class="text-dark fw-bold text-center">ការកម្មង់រយ:ពេល 15 ថ្ងៃ</h5>
+            <p class="text-dark text-center mb-4">ទំនិញនឹងមកដល់ក្នុងអំឡុងពេល 15 ថ្ងៃ</p>
+          </div>
+          <div class="col-9 col-sm-6 col-lg-3 box-shop">
+            <div class="d-flex justify-content-center my-4">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+            </div>
+            <h5 class="text-dark fw-bold text-center">ពិនិត្យចេញដោយសុវត្ថិភាព</h5>
+            <p class="text-dark text-center mb-4">លុយរបស់អ្នកមានសុវត្ថិភាព</p>
+          </div>
+          <div class="col-9 col-sm-6 col-lg-3 box-shop">
+            <div class="d-flex justify-content-center my-4">
+              <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <h5 class="text-dark fw-bold text-center">ធានាគុណភាព 100%</h5>
+            <p class="text-dark text-center mb-4">មានសិទ្ធិក្នុងការផ្លាស់ប្តូរសម្រាប់ទំនិញដែលខូច</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec_middle">
+      <div class="container">
+        <h4 class="text-dark fw-bolder text-center">អាវ HOODIES</h4>
+        <div
+          class="row NewIn d-flex justify-content-center align-items-center"
+        ></div>
+      </div>
+    </section>
+
+    <section class="sec_middle">
+      <div class="container">
+        <h4 class="text-dark fw-bolder text-center">ខោខូវប៊ូយ</h4>
+        <div
+          class="row NewIn-jean d-flex justify-content-center align-items-center"
+        ></div>
+      </div>
+    </section>
+
+    <section class="sec_middle">
+      <div class="container">
+        <h4 class="text-dark fw-bolder text-center">សំពត់</h4>
+        <div
+          class="row NewIn-skirt d-flex justify-content-center align-items-center"
+        ></div>
+      </div>
+    </section>
+    <h3 class="text-black fw-bold container py-2">
+      ឈុតដែលកំពុងពេញនិយមនាពេលបច្ចុប្បន្ន
+    </h3>
+
+    <section class="sec_middle">
+      <div class="container">
+        <div class="swiper clients-slider swiper-container">
+          <div class="swiper-wrapper py-5">
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <section>
+      <div class="container-fluid py-5 foot-foot-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head">
+                YOUR STYLE
+              </h5>
+              <p class="text-dark fw-bold">
+                THE STYLE ជាគេហទំព័រលក់សម្លៀកបំពាក់ឈានមុខគេដែល <br />
+                ផ្តល់ភាពងាយស្រួលដល់អតិថិជនក្នុងការទិញទំនិញតាមអនឡាញ។ <br />
+                សូមអរគុណចំពោះការវាយតម្លៃនិងប្រើប្រាស់នូវគេហទំព័ររបស់ខ្ញំុ។ <br />
+                ខ្ញំុពេញចិត្តនិងរីករាយទទួលនូវមតិរិះគន់និងស្ថាបនាទាំងអស់។ <br />
+              </p>
+            </div>
+
+            <div class="col-lg-4">
+              <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head">
+                HOSTED PROJECTS
+              </h5>
+              <hr class="hr-line" />
+              <p>
+                <a
+                  href="http://training.antkh.com/achievements/657.aspx"
+                  class="text-dark fw-bold title-head"
+                  >Bank management system for programming course</a
+                >
+              </p>
+              <hr class="hr-line" />
+              <p>
+                <a
+                  href="http://antstudents.com/Web/4623/ProjectCambodiaAriLine/index.html"
+                  class="text-dark fw-bold title-head"
+                  >Cambodia airline for website course</a
+                >
+              </p>
+              <hr class="hr-line" />
+            </div>
+
+            <div class="col-lg-4">
+              <h5 class="text-dark fw-bolder py-3 text-foot-footer title-head">
+                ADDRESS
+              </h5>
+              <p>
+                <a href="http://www.antkh.com/" class="text-dark fw-bold title-head"
+                  >Wesite &nbsp;&nbsp;&nbsp; : &nbsp;&nbsp;&nbsp; antkh.com</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.facebook.com/anttrainning?mibextid=ZbWKwL"
+                  class="text-dark fw-bold title-head"
+                  >Facebook &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp; Ant
+                  tranings</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.google.com/maps/place/ANT+Technology+Training+School/@11.5763445,104.8910369,17z/data=!4m14!1m7!3m6!1s0x310951ed5c3cb82f:0xd9d9c87fc8db146a!2sANT+Technology+Training+School!8m2!3d11.5763445!4d104.8936118!16s%2Fg%2F11fl5mt4l1!3m5!1s0x310951ed5c3cb82f:0xd9d9c87fc8db146a!8m2!3d11.5763445!4d104.8936118!16s%2Fg%2F11fl5mt4l1?entry=ttu"
+                  class="text-dark fw-bold title-head"
+                  >Location &nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp;Toul kork ,
+                  phnom penh , cambodia</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid py-2 bg-dark">
+        <p class="text-center title-head">
+          © 2024 by THE STYLE. Brought to you by
+          <span class="ais"> Rak sAa</span>
+        </p>
+      </div>
+    </section>
+  </footer>
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    let second = 0.1;
+    var GetNew = JSON.parse(localStorage.getItem("newin"));
+    for (i = 0; i < GetNew.length; i++) {
+      second += 0.1;
+      if(GetNew[i].id >= 101 && GetNew[i].id <=199){
+        var result = `
+          <div class="col-9 col-sm-6 col-lg-3 pt-5 picture" data-aos="fade-up" style="transition : ${second}s">
+            <div class="card pros bg-transparent d-flex justify-content-center align-items-center">
+                <img class="card-img-top" src=${GetNew[i].image} alt="Card image cap" />
+                <div class="over_card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <span class="card-price d-flex align-items-between text-dark">code : Rs_00<a class="id-pic text-dark"> ${GetNew[i].id}</a></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                              
+                              <div class="box_color1 mx-1"></div>
+                              <div class="box_color2 mx-1"></div>
+                              <div class="box_color3 mx-1"></div>
+                            </div>
+                        </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="card-price d-flex align-items-between text-dark">In :<a class=" text-dark">${GetNew[i].date}</a></span>
+                      <span class="card-price d-flex align-items-between text-dark">តម្លៃ :  ${GetNew[i].price} $</span>
+                    </div>
+                    <div class="mt-4 mb-2 medium_title">
+                      <button onclick="GetNumber(this)"> <a href="booking.html" class="medium_title text-black">បញ្ជាទិញ</a> </button>
+                  </div>
+                </div>
+            </div>
+        </div>`;
+      $(".NewIn").append(result);
+      }
+      else if(GetNew[i].id >= 201 && GetNew[i].id <=299){
+        var result = `
+          <div class="col-9 col-sm-6 col-lg-3 pt-5 picture" data-aos="fade-up" style="transition : ${second}s">
+            <div class="card pros bg-transparent d-flex justify-content-center align-items-center">
+                <img class="card-img-top" src=${GetNew[i].image} alt="Card image cap" />
+                <div class="over_card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                          <span class="card-price d-flex align-items-between text-dark">code : Rs_00<a class="id-pic text-dark"> ${GetNew[i].id}</a></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                              <div class="box_color1 mx-1"></div>
+                              <div class="box_color2 mx-1"></div>
+                              <div class="box_color3 mx-1"></div>
+                            </div>
+                        </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="card-price d-flex align-items-between text-dark">In :<a class=" text-dark">${GetNew[i].date}</a></span>
+                      <span class="card-price d-flex align-items-between text-dark">តម្លៃ :  ${GetNew[i].price} $</span>
+                    </div>
+                    <div class="mt-4 mb-2 medium_title">
+                      <button onclick="GetNumber(this)"> <a href="booking.html" class="medium_title text-black">បញ្ជាទិញ</a> </button>
+                  </div>
+                </div>
+            </div>
+        </div>`;
+      $(".NewIn-jean").append(result);
+      }
+      else if(GetNew[i].id >= 301 && GetNew[i].id <=399){
+        var result = `
+          <div class="col-9 col-sm-6 col-lg-3 pt-5 picture" data-aos="fade-up" style="transition : ${second}s">
+            <div class="card pros bg-transparent d-flex justify-content-center align-items-center">
+                <img class="card-img-top" src=${GetNew[i].image} alt="Card image cap" />
+                <div class="over_card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <span class="card-price d-flex align-items-between text-dark">code : Rs_00<a class="id-pic text-dark"> ${GetNew[i].id}</a></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                              <div class="box_color1 mx-1"></div>
+                              <div class="box_color2 mx-1"></div>
+                              <div class="box_color3 mx-1"></div>
+                            </div>
+                        </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="card-price d-flex align-items-between text-dark">In :<a class=" text-dark">${GetNew[i].date}</a></span>
+                      <span class="card-price d-flex align-items-between text-dark">តម្លៃ :  ${GetNew[i].price} $</span>
+                    </div>
+                    <div class="mt-4 mb-2 medium_title">
+                      <button onclick="GetNumber(this)"><a href="booking.html" class="medium_title text-black">បញ្ជាទិញ</a> </button>
+                  </div>
+                </div>
+            </div>
+        </div>`;
+      $(".NewIn-skirt").append(result);
+      }
+    }
+
+    function GetNumber(e) {
+      const $code = e.parentElement.parentElement.parentElement;
+      const value = $code.querySelector(".id-pic").innerText;
+      localStorage.setItem("number", JSON.stringify(value));
+    }
+
+    
+    var GetNum = JSON.parse(localStorage.getItem("number"));
+    for (i = 0; i < GetNew.length; i++) {
+      if (GetNew[i].id == GetNum) {
+        const make_order = `<img class="card-img-top order-clothes" src=${GetNew[i].image} alt="Card image cap" />`;
+        $(".order-img").append(make_order);
+      }
+    }
+    var getTrend = JSON.parse(localStorage.getItem("newin"));
+    var RecommendClothes = JSON.parse(localStorage.getItem("data"));
+    for (i = 0; i < getTrend.length; i++) {
+      if(i%4==0){
+        var re_clothes = `
+        <div class="swiper-slide">
+          <div class="card pros bg-transparent d-flex justify-content-center align-items-center">
+            <img src=${getTrend[i].image} alt="">
+          </div>
+        </div>`;
+          $(".swiper-wrapper").append(re_clothes);
+      }
+    }
+    var alertMessage = document.querySelector(".alert");
+  const checkEmail = () => {
+        if (document.getElementById("input-email").value == "") {
+          showAlert("Please input your original email first.", "edit");
+        }
+        else if ( document.getElementById("input-email").value.includes("@gmail.com")){
+          showAlert("Your email was send. Thank you for supporting.", "success");
+        }
+        else {
+          showAlert("Your email is wrong, Please re-check.", "danger");
+        }
+  };
+
+    function showAlert(text, action) {
+      alertMessage.textContent = text;
+      alertMessage.classList.add(`alert-${action}`);
+    
+      setTimeout(() => {
+        alertMessage.textContent = "";
+        alertMessage.classList.remove(`alert-${action}`);
+      }, 3000);
+    }
+    
+    
+
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 0,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    new Swiper(".clients-slider", {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 80,
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 60,
+        },
+      },
+    });
+
+    const Lightbox = GLightbox({
+      selector: ".gallery-lightbox",
+    });
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
